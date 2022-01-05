@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /*NAV BAR */
 header {
   background-color: white;
@@ -22,13 +26,14 @@ header {
 
 .navbar .logo {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
   display: block;
 }
 
 .navbar .logo h2 {
-  color: #63c572;
+  font-size: 3rem;
+  color: #03adfc;
 }
 
 .toggle-button {
@@ -98,6 +103,7 @@ li a {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  background-image: url(img/banner.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -109,10 +115,6 @@ li a {
   text-align: center;
   color: white;
   font-size: 1.15rem;
-}
-
-.hero-section .title span {
-  color: #63c572;
 }
 
 .hero-section .title p {
@@ -132,7 +134,7 @@ li a {
     'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
   cursor: pointer;
-  background-color: #63c572;
+  background-color: #03adfc;
   font-size: 16px;
   text-decoration: none;
   padding: 1rem;
@@ -141,7 +143,7 @@ li a {
 
 .hero-section .btn a:nth-child(2) {
   border-radius: 37px;
-  color: #63c572;
+  color: #03adfc;
   font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans',
     'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
@@ -174,23 +176,48 @@ li a {
 
 .about .firstgrid {
   padding: 30px;
-  max-width: 110rem;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-gap: 3rem;
-  border: 1px solid red;
 }
 
 .card {
-  width: 90%;
+  max-width: 400px;
   margin: auto;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 6px 28px 0px rgba(51, 51, 51, 0.5);
+  overflow: hidden;
 }
 
-.card .content {
-  padding: 4.0625rem;
+.card .content img {
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card .content h5 {
+  margin-top: 0.1rem;
+  padding-left: 0px;
+  margin-bottom: 0.1rem;
+  width: 60%;
+  font-size: 16px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-decoration: underline;
+}
+
+.card .content p {
+  line-height: 1.25;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .card .dot {
@@ -251,7 +278,7 @@ li a {
 /*ADVERTISEMENT*/
 .advertise-section {
   min-height: 20vh;
-  background-color: #63c572;
+  background-color: #03adfc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,7 +371,7 @@ li a {
 }
 
 .class-title span {
-  color: #63c572;
+  color: #03adfc;
 }
 
 .class-title p {
@@ -369,7 +396,7 @@ textarea {
 }
 
 input[type='submit'] {
-  background-color: #63c572;
+  background-color: #03adfc;
   color: white;
   font-weight: bold;
 }
@@ -389,7 +416,7 @@ footer p {
 }
 
 footer p span {
-  color: #63c572;
+  color: #03adfc;
 }
 
 @media only screen and (max-width: 852px) {
