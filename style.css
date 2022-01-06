@@ -22,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .navbar .logo {
@@ -58,6 +59,7 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 
 .navbar-links li {
@@ -141,6 +143,12 @@ li a {
   font-weight: bold;
 }
 
+.btn a:nth-child(1):hover {
+  background-color: white;
+  color: #03adfc;
+  transition: all 0.5s ease;
+}
+
 .hero-section .btn a:nth-child(2) {
   border-radius: 37px;
   color: #03adfc;
@@ -153,6 +161,12 @@ li a {
   text-decoration: none;
   padding: 1rem;
   font-weight: bold;
+}
+
+.btn a:nth-child(2):hover {
+  background-color: #03adfc;
+  color: white;
+  transition: all 0.5s ease;
 }
 
 /* ABOUT */
@@ -399,17 +413,25 @@ input[type='submit'] {
   background-color: #03adfc;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  color: #03adfc;
+  transition: all 0.5s ease;
 }
 
 /*FOOTER*/
 footer {
   min-height: 5vh;
-  background-color: black;
+  background-color: white;
 }
 
 footer p {
-  color: white;
+  color: black;
   text-align: center;
+  font-weight: bold;
   padding: 1rem;
   width: 80%;
   margin: auto;
@@ -430,6 +452,7 @@ footer p span {
   .navbar-links ul {
     flex-direction: column;
     width: 100%;
+    overflow-y: auto;
   }
   .navbar-links ul li {
     text-align: center;
