@@ -198,7 +198,7 @@ li a {
 }
 
 .card {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   background-color: white;
   border-radius: 5px;
@@ -235,10 +235,10 @@ li a {
   margin-left: 1rem;
 }
 
-.card .dot {
-  height: 100px;
-  width: 100px;
-  background-color: #63c572;
+.review-image {
+  margin: 1rem;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -273,7 +273,7 @@ li a {
   width: 90%;
   margin: auto;
   background-color: #f1f1f1;
-  text-align: center;
+  display: flex;
   border-radius: 5px;
   box-shadow: 0px 6px 28px 0px rgba(51, 51, 51, 0.5);
 }
@@ -322,14 +322,6 @@ li a {
   padding: 8px;
 }
 
-.review-section .dot {
-  height: 100px;
-  width: 100px;
-  background-color: #63c572;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .star {
   color: orange;
   font-size: 1.5rem;
@@ -337,7 +329,6 @@ li a {
 
 .container-review {
   padding: 30px;
-  border: 1px solid red;
   max-width: 110rem;
   margin: auto;
   display: grid;
@@ -345,14 +336,26 @@ li a {
 }
 
 .container-review .client-reviews {
+  max-width: 500px;
   margin: auto;
-  border-radius: 5px;
   box-shadow: 0px 6px 28px 0px rgba(51, 51, 51, 0.5);
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  gap: 0.75rem;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+.section-review {
+  margin: 0.75rem;
+}
+
+.section-review p {
+  display: inline-block;
+}
+
+.rating {
+  margin: 0.75rem;
 }
 
 /*FORMS*/
